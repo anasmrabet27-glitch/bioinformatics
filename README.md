@@ -21,7 +21,7 @@ data analysis, and bioinformatics programming.
 
 - Python for bioinformatics
 - DNA and RNA sequence manipulation
-- FASTA files
+- FASTA files / fastq
 - GenBank files
 - CDS extraction and validation
 - Sequence statistics
