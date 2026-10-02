@@ -56,27 +56,57 @@ matplotlib
 
 ## Data
 
-Sequence files are not stored in this repository. The *BRCA1* transcripts
-come from NCBI RefSeq (Gene ID 672), downloaded on . Place the
-files in `data/` and adapt the paths at the top of each notebook.
+The BRCA1 transcript sequences used in this project were obtained from the NCBI RefSeq database.
 
-## Methods
+  -Gene: BRCA1 (Breast Cancer 1)
+  -NCBI Gene ID: 672
+  -Database: NCBI RefSeq
+  -Source: NCBI Gene
+  -Data page: https://www.ncbi.nlm.nih.gov/datasets/gene/672/
+  -Download date: 2026-10-02
 
-1. Parse the transcripts with `Bio.SeqIO`.
-2. Compute length, A/T/G/C counts and GC% for each transcript.
-3. Extract each CDS from GenBank records and validate it
-   (`translate(cds=True)`), then compare it with the annotated protein.
-4. Summarise and plot the results.
+The sequence files are not included in this repository. They should be downloaded from the NCBI database and placed in this directory.
+The exact RefSeq accession numbers used in the analysis are documented here to ensure reproducibility.
+
+## Analysis Workflow
+
+RefSeq transcripts
+        ↓
+FASTA parsing
+        ↓
+Length + nucleotide counts + GC%
+        ↓
+Pandas DataFrame
+        ↓
+GenBank records
+        ↓
+CDS extraction and validation
+        ↓
+Protein translation
+        ↓
+Comparison of transcripts
+        ↓
+Visualization
+        ↓
+Biological interpretation
 
 ## Results
 
-To be added.
+The analysis will compare:
 
-## Other notebooks
+-Transcript length
+-A, T, G and C nucleotide counts
+-GC percentage
+-CDS length
+-Protein length
+-Protein sequences
+-Number of distinct protein products
 
-Earlier exercises are kept in `archive/`: DNA manipulation with `Bio.Seq`,
-reading FASTA files with `SeqIO`, and basic FASTQ statistics
-(reads, N bases, GC%, mean Phred quality).
+## Figures will be stored in:
+
+results/figures/
+
+
 
 ## Tools
 
@@ -84,6 +114,11 @@ reading FASTA files with `SeqIO`, and basic FASTQ statistics
 - Biopython
 - Pandas
 - Matplotlib
+- Jupyter Notebook
+
+## Limitations
+
+This project is intended as a bioinformatics learning project. The analysis is based on publicly available RefSeq annotations and should not be interpreted as an experimental validation of transcript or protein function.
 
 ## Author
 
