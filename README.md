@@ -70,25 +70,16 @@ The exact RefSeq accession numbers used in the analysis are documented here to e
 
 ## Analysis Workflow
 
-RefSeq transcripts
-        ↓
-FASTA parsing
-        ↓
-Length + nucleotide counts + GC%
-        ↓
-Pandas DataFrame
-        ↓
-GenBank records
-        ↓
-CDS extraction and validation
-        ↓
-Protein translation
-        ↓
-Comparison of transcripts
-        ↓
-Visualization
-        ↓
-Biological interpretation
+1) RefSeq transcripts      
+2) FASTA parsing
+3) Length + nucleotide counts + GC%
+4) Pandas DataFrame
+5) GenBank records
+6) CDS extraction and validation
+7) Protein translation
+8) Comparison of transcripts
+9)Visualization
+11)Biological interpretation
 
 ## Results
 
