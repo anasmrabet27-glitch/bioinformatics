@@ -8,13 +8,19 @@ NGS data analysis.
 
 How do human BRCA1 RefSeq transcripts differ in sequence length and GC content, and how can the coding sequence (CDS) and encoded protein be characterized using a representative GenBank record?
 
-## Status
+## Current Status
 
-- [x] Length, base counts and GC% of the transcripts (FASTA)
-- [ ] CDS extraction and validation from GenBank records
-- [ ] Plots (length distribution, GC%)
-- [ ] Conclusions
-- [ ] Reusable command-line script
+* [X] FASTA parsing
+* [X] Nucleotide counting (A, T, G, C)
+* [X] GC% calculation
+* [X] Transcript length analysis
+* [ ] CDS extraction from a GenBank record
+* [ ] CDS validation
+* [ ] Protein translation
+* [ ] Length and GC% visualizations
+* [ ] Final conclusions
+* [ ] Final reusable command-line script
+
 
 ## Repository structure
 
