@@ -83,8 +83,8 @@ The exact RefSeq accession numbers used in the analysis are documented here to e
 6) CDS extraction and validation
 7) Protein translation
 8) Comparison of transcripts
-9)Visualization
-11)Biological interpretation
+9) Visualization
+11) Biological interpretation
 
 ## Results
 
