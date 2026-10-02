@@ -6,8 +6,7 @@ NGS data analysis.
 
 ## Question
 
-How do the RefSeq transcripts of *BRCA1* differ in length, GC content and
-coding sequence, and how many distinct proteins do they encode?
+How do human BRCA1 RefSeq transcripts differ in sequence length and GC content, and how can the coding sequence (CDS) and encoded protein be characterized using a representative GenBank record?
 
 ## Status
 
