@@ -41,7 +41,7 @@ Folders are added as the project progresses.
 ## Installation
 
 ```bash
-git clone https://github.com/<your-username>/bioinformatics.git
+git clone https://github.com/anasmrabet27-glitch/bioinformatics.git
 cd bioinformatics
 pip install -r requirements.txt
 ```
@@ -57,7 +57,7 @@ matplotlib
 ## Data
 
 Sequence files are not stored in this repository. The *BRCA1* transcripts
-come from NCBI RefSeq (Gene ID 672), downloaded on `YYYY-MM-DD`. Place the
+come from NCBI RefSeq (Gene ID 672), downloaded on . Place the
 files in `data/` and adapt the paths at the top of each notebook.
 
 ## Methods
