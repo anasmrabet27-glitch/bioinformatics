@@ -28,7 +28,7 @@ How do human BRCA1 RefSeq transcripts differ in sequence length and GC content, 
 bioinformatics/
 ├── notebooks/
 │   ├── 01_fasta_stats.ipynb      # FASTA parsing, base counts, GC% (Pandas)
-│   ├── 02_genbank_cds.ipynb      # CDS extraction and validation
+│   ├── 02_cds_cdna.ipynb      # CDS extraction and validation
 │   ├── 03_visualisation.ipynb    # Plots
 │   └── 04_conclusions.ipynb      # Interpretation of the results
 ├── scripts/
