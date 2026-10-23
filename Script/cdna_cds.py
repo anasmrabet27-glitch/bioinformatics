@@ -7,7 +7,7 @@
 from Bio import SeqIO
 import pandas as pd
 
-filename = r"C:\Users\anasm\Downloads\ENSG00000012048.28 (2).fasta"
+filename = r""
 
 resultats = {}
 dernier_transcrit = None
@@ -50,7 +50,7 @@ for record in SeqIO.parse(filename, "fasta"):
 df = pd.DataFrame(resultats.values())
 
 df.to_excel(
-    r"C:\Users\anasm\Downloads\test1.xlsx",
+    r"",
     index=False
 )
 
