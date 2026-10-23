@@ -1,121 +1,64 @@
-# BRCA1 Isoform Analysis
+# BRCA1 Bioinformatics Project
 
-A bioinformatics learning project: analysing the RefSeq transcripts of the
-human *BRCA1* gene with Python (Biopython and Pandas), as a step towards
-NGS data analysis.
+This is one of my first bioinformatics projects. I am learning how to use Python to analyze biological sequences and explore the human *BRCA1* gene.
 
-## Question
+The goal of this project is to practice bioinformatics using real sequence data from NCBI and Ensembl.
 
-How do human BRCA1 RefSeq transcripts differ in sequence length and GC content, and how can the coding sequence (CDS) and encoded protein be characterized using a representative GenBank record?
+## What I Have Done
 
-## Current Status
+### 1. FASTA Analysis
 
-* [X] FASTA parsing
-* [X] Nucleotide counting (A, T, G, C)
-* [X] GC% calculation
-* [X] Transcript length analysis
-* [ ] CDS extraction from a GenBank record
-* [ ] CDS validation
-* [ ] Protein translation
-* [ ] Length and GC% visualizations
-* [ ] Final conclusions
-* [ ] Final reusable command-line script
+I wrote a Python script using Biopython to read FASTA files and analyze DNA sequences.
 
+The script calculates:
+- Sequence length
+- Number of A, T, G, and C nucleotides
+- GC content (%)
 
-## Repository structure
+I used Pandas to organize the results into a table.
 
-```text
-bioinformatics/
-├── notebooks/
-│   ├── 01_fasta_stats.ipynb      # FASTA parsing, base counts, GC% (Pandas)
-│   ├── 02_cds_cdna.ipynb      # CDS extraction and validation
-│   ├── 03_visualisation.ipynb    # Plots
-│   └── 04_conclusions.ipynb      # Interpretation of the results
-├── scripts/
-│   └── fasta_stats.py            # Command-line version of the FASTA statistics
-├── data/
-│   └── README.md                 # Data sources and download date
-├── results/
-│   └── figures/
-├── requirements.txt
-└── README.md
-```
+### 2. cDNA and CDS Analysis
 
-Folders are added as the project progresses.
+I also created a script to analyze cDNA and CDS sequences.
 
-## Installation
+It calculates:
+- cDNA length and GC content
+- CDS length and GC content
+- Protein identifiers and protein length when available in the input file
 
-```bash
-git clone https://github.com/anasmrabet27-glitch/bioinformatics.git
-cd bioinformatics
-pip install -r requirements.txt
-```
+The results can be exported to an Excel file for further analysis.
 
-`requirements.txt`:
+## Data Sources
 
-```text
-biopython
-pandas
-matplotlib
-```
+I use sequence data from two databases:
 
-## Data
+- **NCBI RefSeq:** [BRCA1 — NCBI Gene](https://www.ncbi.nlm.nih.gov/datasets/gene/672/)
+- **Ensembl:** [BRCA1 — Ensembl](https://www.ensembl.org/Homo_sapiens/Gene/Summary?g=ENSG00000012048)
 
-The BRCA1 transcript sequences used in this project were obtained from the NCBI RefSeq database.
+The FASTA files are included in the repository as examples of the data used in my project.
 
-  -Gene: BRCA1 (Breast Cancer 1)
-  -NCBI Gene ID: 672
-  -Database: NCBI RefSeq
-  -Source: NCBI Gene
-  -Data page: https://www.ncbi.nlm.nih.gov/datasets/gene/672/
-  -Download date: 2026-10-02
+## Tools Used
 
-The sequence files are not included in this repository. They should be downloaded from the NCBI database and placed in this directory.
-The exact RefSeq accession numbers used in the analysis are documented here to ensure reproducibility.
-
-## Analysis Workflow
-
-1) RefSeq transcripts      
-2) FASTA parsing
-3) Length + nucleotide counts + GC%
-4) Pandas DataFrame
-5) GenBank records
-6) CDS extraction and validation
-7) Protein translation
-8) Comparison of transcripts
-9) Visualization
-11) Biological interpretation
-
-## Results
-
-The analysis will compare:
-
--Transcript length
--A, T, G and C nucleotide counts
--GC percentage
--CDS length
--Protein length
--Protein sequences
--Number of distinct protein products
-
-## Figures will be stored in:
-
-results/figures/
-
-
-
-## Tools
-
-- Python 3
+- Python
 - Biopython
 - Pandas
-- Matplotlib
-- Jupyter Notebook
+- Excel
 
-## Limitations
+## What I Am Learning
 
-This project is intended as a bioinformatics learning project. The analysis is based on publicly available RefSeq annotations and should not be interpreted as an experimental validation of transcript or protein function.
+Through this project, I am learning how to:
+- Work with biological sequence files
+- Use Python for bioinformatics
+- Calculate nucleotide composition and GC content
+- Analyze cDNA and CDS sequences
+- Organize biological data into tables
 
-## Author
+## About This Project
 
-Learning bioinformatics and genomics. Feedback is welcome.
+This is a personal learning project, and I am still improving my Python and bioinformatics skills.
+
+I plan to continue learning and improving my scripts as I gain more experience.
+
+Thanks for visiting my repository!
+
+**Author:** Anas
